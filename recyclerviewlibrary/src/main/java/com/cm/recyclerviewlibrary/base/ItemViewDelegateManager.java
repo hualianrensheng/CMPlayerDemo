@@ -9,6 +9,7 @@ import android.support.v4.util.SparseArrayCompat;
 public class ItemViewDelegateManager<T> {
 
     SparseArrayCompat<ItemViewDelegate<T>> delegates = new SparseArrayCompat<>();
+    SparseArrayCompat<ItemViewDelegate<T>> mdelegates = new SparseArrayCompat<>();
 
     public int getItemViewDelegateCount() {
         return delegates.size();
